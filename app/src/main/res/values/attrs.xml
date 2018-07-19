@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--柱状图-->
+    <declare-styleable name="chart_cylinder">
+        <!--柱状图标题-->
+        <attr name="chart_title_text" format="reference|string"/>
+        <!--柱状图单位类型，0表示步数，1表示公里（km），2表示米(m)，km/m在绘图时，具体还要根据公英制转换-->
+        <attr name="unit_type" format="integer"/>
+        <!--用于“我的一天”-->
+        <!--达成目标顶部渐变颜色-->
+        <attr name="achieve_top_color" format="color"/>
+        <!--达成目标底部渐变颜色-->
+        <attr name="achieve_bottom_color" format="color"/>
+        <!--未达成目标顶部渐变颜色-->
+        <attr name="unachieve_top_color" format="color"/>
+        <!--未达成目标底部渐变颜色-->
+        <attr name="unachieve_bottom_color" format="color"/>
+        <!--目标指示颜色-->
+        <attr name="goal_color" format="color"/>
+        <!--用于运动模式，比如跑步，徒步-->
+        <!--处于中间值得顶部渐变颜色-->
+        <attr name="center_top_color" format="color"/>
+        <!--处于中间值得底部渐变颜色-->
+        <attr name="center_bottom_color" format="color"/>
+        <!--处于最大值的顶部渐变颜色-->
+        <attr name="max_top_color" format="color"/>
+        <!--处于最大值得底部渐变颜色-->
+        <attr name="max_bottom_color" format="color"/>
+        <!--处于最小值得顶部渐变颜色-->
+        <attr name="min_top_color" format="color"/>
+        <!--处于最小值得顶部渐变颜色-->
+        <attr name="min_bottom_color" format="color"/>
+    </declare-styleable>
+    <!--渐变折线图-->
+    <declare-styleable name="polyline">
+        <!--折线图类型，0表示速度，1表示心率，2表示高度，3表示步频，4表示温度-->
+        <attr name="chart_type" format="integer"/>
+        <!--折线图渐变顶部颜色-->
+        <attr name="polyline_top_color" format="color"/>
+        <!--折线图渐变底部颜色-->
+        <attr name="polyline_bottom_color" format="color"/>
+        <!--折线图标题，比如：步频-->
+        <attr name="polyline_title" format="reference|string"/>
+        <!--运动数据左边标题，比如：平均步频-->
+        <attr name="polyline_left_message" format="reference|string"/>
+        <!--运动数据右边标题：比如：最高步频-->
+        <attr name="polyline_right_message" format="reference|string"/>
+    </declare-styleable>
+    <!--横向柱状图-->
+    <declare-styleable name="horizontal_cylinder">
+        <!--横向柱状图类型，0表示单公里显示的，1表示可能要5公里显示，比如：骑行（也就还只有骑行），但是也要超过10公里才做5公里显示-->
+        <attr name="chart_cylinder_type" format="integer"/>
+        <!--横向柱状图开始渐变颜色-->
+        <attr name="start_color" format="color"/>
+        <!--横向柱状图结束渐变颜色-->
+        <attr name="end_color" format="color"/>
+    </declare-styleable>
+
+</resources>

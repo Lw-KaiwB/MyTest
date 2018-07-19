@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.test.view.ChartPolyLineView
+        android:id="@+id/map_height_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        custom:chart_type="2"
+        custom:polyline_bottom_color="@color/chart_polyline_high_bottom_color"
+        custom:polyline_left_message="@string/message_left_high"
+        custom:polyline_right_message="@string/message_right_high"
+        custom:polyline_title="@string/title_height"
+        custom:polyline_top_color="@color/chart_polyline_high_top_color"
+        android:visibility="gone"/>
+    <com.test.view.ChartPolyLineView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        custom:chart_type="2"
+        custom:polyline_bottom_color="@color/chart_polyline_high_bottom_color"
+        custom:polyline_left_message="@string/message_left_high"
+        custom:polyline_right_message="@string/message_right_high"
+        custom:polyline_title="@string/title_height"
+        custom:polyline_top_color="@color/chart_polyline_high_top_color"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEST"/>
+</LinearLayout>

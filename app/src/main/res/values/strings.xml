@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyTest</string>
+    <string name="unit_speed_km_h">KM/H</string>
+    <string name="unit_heart">BPM</string>
+    <string name="unit_height">M</string>
+    <string name="unit_freq">SPM</string>
+    <string name="unit_temp">℃</string>
+    <string name="unit_min_km">MIN/KM</string>
+    <string name="unit_min_ft">MIN/FT</string>
+    <string name="unit_step">STEP</string>
+    <string name="unit_km">KM</string>
+    <string name="title_speed">速度</string>
+    <string name="title_heart">心率</string>
+    <string name="title_height">高度</string>
+    <string name="title_freq">步频</string>
+    <string name="title_temp">温度</string>
+    <string name="title_pace">配速</string>
+    <string name="title_step">步数</string>
+    <string name="title_mileage">里程</string>
+    <string name="message_left_speed">平均速度</string>
+    <string name="message_right_speed">最大速度</string>
+    <string name="message_left_heart">平均心率</string>
+    <string name="message_right_heart">最大心率</string>
+    <string name="message_left_high">最小高度</string>
+    <string name="message_right_high">最大高度</string>
+    <string name="message_left_freq">平均步频</string>
+    <string name="message_right_freq">最大步频</string>
+    <string name="message_left_temp">平均温度</string>
+    <string name="message_right_temp">最低温度</string>
+    
+
+</resources>

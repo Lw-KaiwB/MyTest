@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--My color-->
+    <color name="chart_cylinder_achieve_top_color">#00ccff</color>
+    <color name="chart_cylinder_achieve_bottom_color">#006ab5</color>
+    <color name="chart_cylinder_unachieve_top_color">#ff0000</color>
+    <color name="chart_cylinder_unachieve_bottom_color">#a90142</color>
+    <color name="chart_cylinder_max_top_color">#ffcc00</color>
+    <color name="chart_cylinder_max_bottom_color">#ff9900</color>
+    <color name="chart_cylinder_min_top_color">#ff0000</color>
+    <color name="chart_cylinder_min_bottom_color">#a90142</color>
+    <color name="chart_cylinder_center_top_color">#00ccff</color>
+    <color name="chart_cylinder_center_bottom_color">#006ab5</color>
+    <color name="chart_cylinder_goal_color">#333333</color>
+    <color name="chart_axis_color">#272727</color>
+    <color name="chart_polyline_speed_top_color">#00ccff</color>
+    <color name="chart_polyline_speed_bottom_color">#006ab5</color>
+    <color name="chart_polyline_heart_top_color">#ff0000</color>
+    <color name="chart_polyline_heart_bottom_color">#a90142</color>
+    <color name="chart_polyline_high_top_color">#99ff00</color>
+    <color name="chart_polyline_high_bottom_color">#31AE00</color>
+    <color name="chart_polyline_freq_top_color">#00ccff</color>
+    <color name="chart_polyline_freq_bottom_color">#006ab5</color>
+    <color name="chart_polyline_temp_top_color">#00ccff</color>
+    <color name="chart_polyline_temp_bottom_color">#006ab5</color>
+    <color name="chart_horizontal_cylinder_start_color">#002c87</color>
+    <color name="chart_horizontal_cylinder_end_color">#00c4f9</color>
+    <color name="background_color">#191919</color>
+    <color name="chart_scale_text_color">#ffffff</color>
+    <color name="chart_space_line_color">#333333</color>
+</resources>

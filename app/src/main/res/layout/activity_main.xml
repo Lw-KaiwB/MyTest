@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.test.mytest.MainActivity">
+
+    <com.test.view.ChartCylinderView
+        android:id="@+id/chart_cylinder_step"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        custom:chart_title_text="@string/title_mileage"
+        custom:unit_type="1"
+        custom:achieve_bottom_color="@color/chart_cylinder_achieve_bottom_color"
+        custom:achieve_top_color="@color/chart_cylinder_achieve_top_color"
+        custom:goal_color="@color/chart_cylinder_goal_color"
+        custom:unachieve_bottom_color="@color/chart_cylinder_unachieve_bottom_color"
+        custom:unachieve_top_color="@color/chart_cylinder_unachieve_top_color"/>
+
+    <com.test.view.ChartCylinderSportView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        custom:chart_title_text="@string/title_mileage"
+        custom:unit_type="1"
+        custom:center_bottom_color="@color/chart_cylinder_center_bottom_color"
+        custom:center_top_color="@color/chart_cylinder_center_top_color"
+        custom:max_bottom_color="@color/chart_cylinder_max_bottom_color"
+        custom:max_top_color="@color/chart_cylinder_max_top_color"
+        custom:min_bottom_color="@color/chart_cylinder_min_bottom_color"
+        custom:min_top_color="@color/chart_cylinder_min_top_color"/>
+
+
+</LinearLayout>

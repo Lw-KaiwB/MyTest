@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/holo_red_light">
+
+        <com.test.view.ChartHorizontalCylinderView
+            android:paddingTop="10dp"
+            android:background="@color/chart_cylinder_goal_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:chart_cylinder_type="0"
+            custom:end_color="@color/chart_horizontal_cylinder_end_color"
+            custom:start_color="@color/chart_horizontal_cylinder_start_color"
+            />
+    </LinearLayout>
+</ScrollView>
