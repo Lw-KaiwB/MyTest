@@ -123,10 +123,12 @@ public class RotateView extends View {
 		canvas.drawBitmap(mBitmap, IMG_PADDING, IMG_PADDING, mPaint);
 		canvas.restore();
 
-		Log.e("TAG","CanvasDegree="+CanvasDegree);
+		Log.e("TAG", "CanvasDegree=" + CanvasDegree);
 		if (CanvasDegree != 0) {
 			canvas.save();
 			canvas.rotate(CanvasDegree);
+			canvas.clipRect(IMG_PADDING, IMG_PADDING, IMG_PADDING + IMG_WIDTH / 2, IMG_PADDING + IMG_WIDTH);
+			canvas.drawBitmap(mBitmap, IMG_PADDING, IMG_PADDING, mPaint);
 			canvas.restore();
 			Log.e("TAG", "isRotate");
 
