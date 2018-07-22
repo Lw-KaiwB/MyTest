@@ -109,30 +109,46 @@ public class RotateView extends View {
 
 
 		canvas.save();
-		canvas.translate((IMG_PADDING + IMG_WIDTH / 2), (IMG_PADDING + IMG_WIDTH / 2));
+		canvas.translate((IMG_PADDING+IMG_WIDTH/2),(IMG_PADDING+IMG_WIDTH/2));
 		mCamera.save();
-		mCamera.rotate(XDegree, YDegree, 0);
+		canvas.rotate(CanvasDegree);
+		mCamera.rotate(XDegree,YDegree,0);
 		mCamera.applyToCanvas(canvas);
+		canvas.rotate(-CanvasDegree);
 		mCamera.restore();
-		canvas.translate(-(IMG_PADDING + IMG_WIDTH / 2), -(IMG_PADDING + IMG_WIDTH / 2));
-		canvas.drawBitmap(mBitmap, IMG_PADDING, IMG_PADDING, mPaint);
+
+		canvas.translate(-(IMG_PADDING+IMG_WIDTH/2),-(IMG_PADDING+IMG_WIDTH/2));
+		canvas.drawBitmap(mBitmap,IMG_PADDING,IMG_PADDING,mPaint);
 		canvas.restore();
 
-		canvas.save();
-		canvas.clipRect(IMG_PADDING, IMG_PADDING, IMG_PADDING + IMG_WIDTH / 2, IMG_PADDING + IMG_WIDTH);
-		canvas.drawBitmap(mBitmap, IMG_PADDING, IMG_PADDING, mPaint);
-		canvas.restore();
-
-		Log.e("TAG", "CanvasDegree=" + CanvasDegree);
-		if (CanvasDegree != 0) {
+		/*canvas.save();
+		canvas.rotate(CanvasDegree);
+		canvas.clipRect(IMG_PADDING,IMG_PADDING,IMG_PADDING+IMG_WIDTH/2,IMG_PADDING+IMG_WIDTH);
+		canvas.rotate(-CanvasDegree);
+		canvas.drawBitmap(mBitmap,IMG_PADDING,IMG_PADDING,mPaint);
+		canvas.restore();*/
+		Log.e("TAG","CanvasDegree="+CanvasDegree);
+		if (CanvasDegree!=-270){
 			canvas.save();
+			canvas.translate((IMG_PADDING+IMG_WIDTH/2),(IMG_PADDING+IMG_WIDTH/2));
 			canvas.rotate(CanvasDegree);
-			canvas.clipRect(IMG_PADDING, IMG_PADDING, IMG_PADDING + IMG_WIDTH / 2, IMG_PADDING + IMG_WIDTH);
-			canvas.drawBitmap(mBitmap, IMG_PADDING, IMG_PADDING, mPaint);
+			canvas.clipRect(-IMG_WIDTH/2-IMG_WIDTH/4,-IMG_WIDTH/2-IMG_WIDTH/4,0,IMG_WIDTH/2+IMG_WIDTH/4);
+			canvas.rotate(-CanvasDegree);
+			canvas.translate(-(IMG_PADDING+IMG_WIDTH/2),-(IMG_PADDING+IMG_WIDTH/2));
+			canvas.drawBitmap(mBitmap,IMG_PADDING,IMG_PADDING,mPaint);
 			canvas.restore();
-			Log.e("TAG", "isRotate");
-
+		}else {
+			canvas.save();
+			canvas.translate((IMG_PADDING+IMG_WIDTH/2),(IMG_PADDING+IMG_WIDTH/2));
+			canvas.rotate(CanvasDegree);
+			canvas.clipRect(0,-IMG_WIDTH/2,IMG_WIDTH/2,IMG_WIDTH/2);
+			canvas.rotate(-CanvasDegree);
+			canvas.translate(-(IMG_PADDING+IMG_WIDTH/2),-(IMG_PADDING+IMG_WIDTH/2));
+			canvas.drawBitmap(mBitmap,IMG_PADDING,IMG_PADDING,mPaint);
+			canvas.restore();
 		}
+
+
 
 	}
 }
