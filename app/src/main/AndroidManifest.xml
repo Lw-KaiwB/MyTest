@@ -48,9 +48,15 @@
             </intent-filter>-->
         </activity>
         <activity android:name=".RotateActivity">
-            <intent-filter>
+            <!--<intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".MaterialEditTextActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
