@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.test.view.TagLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="撑着油纸伞"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="独自"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="彷徨在悠长"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="悠长"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="又寂寥的雨巷 "
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我希望逢着"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="一个丁香一样地"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="结着愁怨的姑娘她是有丁香一样的颜色 丁香一样的芬芳 丁香一样的忧愁 在雨中哀怨 "
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </com.test.view.TagLayout>
+</LinearLayout>
