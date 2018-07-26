@@ -3,7 +3,11 @@ package com.test.unit;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.text.TextUtils;
 import android.util.TypedValue;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Administrator on 2018/1/29.
@@ -80,5 +84,21 @@ public class Utils {
 
 	public static float dip2px(float value) {
 		return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, Resources.getSystem().getDisplayMetrics());
+	}
+
+	public static boolean isNumber(String tag) {
+		if (TextUtils.isEmpty(tag)) {
+			return false;
+		}
+		String[] values = tag.split(",");
+		String regEx = "[0-9]*";
+		Pattern p = Pattern.compile(regEx);
+		Matcher m = p.matcher(values[0]);
+		if (m.matches()) {
+			return true;
+		} else {
+			return false;
+		}
+
 	}
 }

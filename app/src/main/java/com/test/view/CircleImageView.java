@@ -13,7 +13,7 @@ import com.test.unit.Utils;
 public class CircleImageView extends AppCompatImageView {
 
     private final int PADDING = (int) Utils.dip2px(50);
-    private final int RADIUS = (int) Utils.dip2px(150);
+    private final int RADIUS = (int) Utils.dip2px(100);
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     public CircleImageView(Context context) {
         super(context);
